@@ -28,7 +28,7 @@ export default function Home() {
             <h2 className="text-2xl py-2 md:text-3xl">Front End Developer</h2>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">Ready to start my career as a Front End Dev!</p>
           </div>
-          <div className="text-xl flex justify-center gap-16 py-3"> icons go here </div> 
+          <div className="text-xl flex justify-center gap-16 py-3"> Will put icons here </div> 
           <div className=" mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-auto">
               this will be for image not ugly AI
           </div>
