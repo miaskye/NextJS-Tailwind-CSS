@@ -2,7 +2,10 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 //import {AiFillLinkedIn, AiFillTwitterCircle} from "react-icons/ai";
 import { useState } from 'react';
-
+import {BsLinkedin} from "react-icons/bs"
+import {BsInstagram} from "react-icons/bs"
+import {BsGithub} from "react-icons/bs"
+import Link from "next/link"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,25 +20,35 @@ export default function Home() {
       <main  className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900" > 
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between ">
-            <h1 className='text-xl'>developedbymiaskye</h1>
+            <h1 className='text-xl  dark:text-white'>miaskyedev</h1>
             <ul className="flex items-center">
-              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}className='cursor-pointer text-2xl'/></li>
+              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}className='cursor-pointer text-2xl dark:text-white'/></li>
               <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h3 className="text-5xl py-2 text-teal-500 font-medium md:text-6xl">Mia Skye</h3>
-            <h2 className="text-2xl py-2 md:text-3xl">Front End Developer</h2>
-            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">Ready to start my career as a Front End Dev!</p>
+            <h3 className="text-5xl py-2 text-teal-500 font-medium md:text-6xl dark:text-white">Mia Skye</h3>
+            <h2 className="text-2xl py-2 md:text-3xl  dark:text-white">Front End Developer</h2>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto  dark:text-white">Just started my career as a Front End Dev!</p>
           </div>
-          <div className="text-xl flex justify-center gap-16 py-3"> Will put icons here </div> 
-          <div className=" mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-auto">
-              this will be for image not ugly AI
+          <div className="text-xl flex justify-center gap-16 py-3"> 
+            <Link href="https://www.linkedin.com/in/mia-dalton-4140a9245"> 
+              <BsLinkedin className="dark:text-white"/> 
+            </Link>
+            <Link href="https://github.com/miaskye">
+              <BsGithub className="dark:text-white"/>
+            </Link>
+            <Link href="https://www.instagram.com/miaskyedev/?igshid=YmMyMTA2M2Y%3D">
+              <BsInstagram className="dark:text-white"/>
+            </Link>
+          </div> 
+          <div className=" mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-auto dark:text-white">
+              coding with ryanGPT
           </div>
         </section>
       
 
-        <section>
+        {/* <section>
             <div>
               <h3 className="text-3xl py-1 text-gray-800"> Services I Offer</h3>
               <p>Coming Soon </p>
@@ -57,15 +70,32 @@ export default function Home() {
               <p className="text-gray-800 py-1">Description of Project</p>
             </div>
             </div>
-        </section>
+        </section> */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 text-gray-800"> Portfolio </h3>
-            <p>Description</p>
+            <h3 className="text-3xl py-1 text-gray-800 dark:text-white"> Portfolio </h3>
+            <p className= "dark:text-white">Description</p>
           </div>
           <div>
             image 
           </div>
+            <div className="lg:flex gap-10  ">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <h4 className="py-4 text-teal-600 dark:text-white"> Project </h4> 
+              <p className="text-gray-800 py-1 dark:text-white">Description of Project</p>
+              <p className="text-gray-800 py-1 dark:text-white">Description of Project</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <h4 className="py-4 text-teal-600 dark:text-white"> Project </h4> 
+              <p className="text-gray-800 py-1 dark:text-white">Description of Project</p>
+              <p className="text-gray-800 py-1 dark:text-white">Description of Project</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <h4 className="py-4 text-teal-600 dark:text-white"> Project </h4> 
+              <p className="text-gray-800 py-1 dark:text-white">Description of Project</p>
+              <p className="text-gray-800 py-1  dark:text-white">Description of Project</p>
+            </div>
+            </div>
         </section>
 
       </main>
